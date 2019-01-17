@@ -1,7 +1,7 @@
 {
     "created": "2018-12-17T12:12:33.027325342Z",
     "author": "Costas Pipilas <costas@spannerci.com>",
-    "architecture": "armCortexM",
+    "architecture": "ArmCortexM",
     "os": "freertos",
     "config": {
         "ExposedPorts": {
