@@ -1,0 +1,33 @@
+{
+    "created": "2018-12-17T12:12:33.027325342Z",
+    "author": "Costas Pipilas <costas@spannerci.com>",
+    "architecture": "armCortexM",
+    "os": "freertos",
+    "config": {
+        "ExposedPorts": {
+            "8080/tcp": {},
+            "1883/mqtt": {},
+        },
+        "Env": [
+            "PATH=/secure/bin",
+        ],
+        "Entrypoint": [
+            "/secure/bin/my-app"
+        ],
+        "Cmd": [
+            "--debug",
+            "--format",
+            "/secure/etc/my-app-config"
+        ],
+        "WorkingDir": "/secure",
+    },
+    "rootfs": {
+      "fsLayout": [
+        "/secure/etc/my-app-config",
+        "/secure/etc/default-config",
+        "/secure/bin/my-app",
+      ],
+      "type": "fatfs",
+      "encrypted": "yes"
+    },
+}
