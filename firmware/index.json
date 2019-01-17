@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "manifests": [
+    {
+      "platform": { 
+        "architecture": "ArmCortexM",
+        "mcu": "cortexM3",
+        "boardSupportPackage": "BCM943362WCD4",
+        "os": "freertos",
+	      "platformSdk": "wiced"
+      }
+    },
+    {
+      "platform": {
+        "architecture": "ArmCortexM",
+        "mcu": "cortexM4",
+        "boardSupportPackage": "BCM943364WCD1",
+        "os": "freertos",
+        "platformSdk": "wiced"
+      }
+    }
+  ],
+}
