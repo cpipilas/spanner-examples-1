@@ -7,7 +7,7 @@
         "mcu": "cortexM3",
         "boardSupportPackage": "BCM943362WCD4",
         "os": "freertos",
-	      "platformSdk": "wiced"
+	"platformSdk": "wiced"
       }
     },
     {
