@@ -12,20 +12,20 @@
             "PATH=/secure/bin",
         ],
         "Entrypoint": [
-            "/secure/bin/my-app"
+            "/secure/bin/app1"
         ],
         "Cmd": [
             "--debug",
             "--format",
-            "/secure/etc/my-app-config"
+            "/secure/etc/app1-config"
         ],
         "WorkingDir": "/secure",
     },
     "rootfs": {
       "fsLayout": [
-        "/secure/etc/my-app-config",
+        "/secure/etc/app1-config",
         "/secure/etc/default-config",
-        "/secure/bin/my-app",
+        "/secure/bin/app1",
       ],
       "type": "fatfs",
       "encrypted": "yes"
